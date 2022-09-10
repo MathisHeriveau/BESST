@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: url("/WEB/Image/indexHeader.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+header > section:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+
+    border-bottom: 1px rgba(255, 255, 255, 0.318) solid;
+}
+header > section:nth-child(1) > img {
+    height: 100%;
+    padding: 0.5%;
+}
+
+header > section:nth-child(1) > nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 65vw;
+}
+header > section:nth-child(1) > nav > a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+header > section:nth-child(1) > nav > a:hover {
+    transform: translateY(-2px);
+}
+
+
+header > section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+}
+
+header > section:nth-child(2) > .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 30vh;
+}
+
+header > section:nth-child(2) > .titre > h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.trait{
+    height: 3px;
+    width: 60px;
+    background-color: rgba(255, 81, 0, 0.584);
+    border-radius: 3px;
+
+}
+
+header > section:nth-child(2) > .titre > h4{
+    color: dimgrey;
+    padding-top: 1.5%;
+
+}
+
+header > section:nth-child(2) > .titre > button{
+    width: 10vw;
+    height: 6vh;
+    background-color:#f05f40;
+    border: 0px;
+    font-size:small;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 6vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main > article:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f05f40;
+    color: white;
+    text-align: center;
+    height: 65vh;
+}
+
+main > article:nth-child(1) > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45vw;
+    height: 50vh;
+}
+
+main > article:nth-child(1) > section > h3{
+    font-size: x-large;
+}
+
+main > article:nth-child(1) > section > .trait{
+    background-color: white;
+}
+
+main > article:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 80vh;
+}
+main > article:nth-child(2) > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+main > article:nth-child(2) > section > h3{
+    font-size: x-large;
+}
+
+main > article:nth-child(2) > section > .trait{
+}
+
+main > article:nth-child(2) > section > .PLFNexemple{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+main > article:nth-child(2) > section > .PLFNexemple >.exemple{
+    width: 20vw;
+}
+main > article:nth-child(2) > section > .PLFNexemple >.exemple > img{
+    height: 100px;
+}
+main > article:nth-child(2) > section > .PLFNexemple >.exemple > p{
+    color: #ad9588;
+}
+
+
+main > article:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad9588;
+    color: white;
+    text-align: center;
+    height: 70vh;
+    width: 100vw;
+}
+
+main > article:nth-child(3) > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+main > article:nth-child(3) > section > h3{
+    font-size: x-large;
+}
+
+main > article:nth-child(3) > section > .trait{
+    background-color: white;
+}
+
+main > article:nth-child(3) > section > .objectif{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+}
+
+main > article:nth-child(3) > section > .objectif > .exemple > p{
+    width: 20vw;
+}
+
+main > article:nth-child(3) > section > .objectif > .exemple > .texte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 45vw;
+}
+
+.traitHori{
+    width: 2px;
+    height: 100px;
+    background-color: white;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+footer > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+footer > section > h2 {font-size: x-large;}
+footer > section > h6{font-size: large;}
+
+footer > section > .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 33vw;
+}
+
+footer > section > .contact > .logo {
+    height: 5vh;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer > section > .contact > .logo > img{    height:90%;}
+footer > section > .contact > .logo:nth-child(1) > a{color:black;}
+footer > section > .contact > .logo:nth-child(2) > a{color:#f05f40;}
