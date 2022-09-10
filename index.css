@@ -12,7 +12,7 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    background: url("/WEB/Image/indexHeader.jpg") no-repeat center center;
+    background: url("/Image/indexHeader.jpg") no-repeat center center;
     background-size: cover;
 }
 
