@@ -43,6 +43,7 @@ header > section:nth-child(1) > nav > a{
     text-transform: uppercase;
     font-size: small;
     font-weight: bold;
+    font-size: 1vw;
 }
 header > section:nth-child(1) > nav > a:hover {
     transform: translateY(-2px);
@@ -179,7 +180,7 @@ main > article:nth-child(3){
     color: white;
     text-align: center;
     height: 70vh;
-    width: 99vw;
+    width: 100vw;
 }
 
 main > article:nth-child(3) > section{
@@ -223,6 +224,10 @@ main > article:nth-child(3) > section > .objectif > .exemple > .texte{
     background-color: white;
 }
 
+.traitHori:nth-child(3){
+    display: none;
+}
+
 
 footer{
     display: flex;
@@ -262,3 +267,102 @@ footer > section > .contact > .logo {
 footer > section > .contact > .logo > img{    height:90%;}
 footer > section > .contact > .logo:nth-child(1) > a{color:black;}
 footer > section > .contact > .logo:nth-child(2) > a{color:#f05f40;}
+
+@media only screen 
+and (max-device-width: 700px){
+    header > section:nth-child(1) > nav{
+        width: 80vw;
+    }
+    header > section:nth-child(1) {
+        height: 5vh;
+    }
+    header > section:nth-child(2) > .titre > button{
+        width: 30vw;
+    }
+    main > article:nth-child(1) > section{
+        width: 90vw;
+        height: 70vh;
+    }
+    main > article:nth-child(1){
+        height: 80vh;
+    }
+    main > article:nth-child(2){
+        height: 80vh;
+    }
+    main > article:nth-child(2) > section{
+        width: 70vw;
+        height: 90%;
+    }
+    main > article:nth-child(2) > section > .PLFNexemple >.exemple {
+        height: 100%;
+    }
+    main > article:nth-child(2) > section > .PLFNexemple >.exemple > img{
+        width: 40px;
+        height: auto;
+    }
+    main > article:nth-child(2) > section > .PLFNexemple >.exemple > h5{
+        font-size: 12px;
+    }
+
+    main > article:nth-child(2) > section > .PLFNexemple >.exemple > p{
+        font-size: 10px;
+    }
+    main > article:nth-child(3){
+        height: 70vh;
+    }
+    main > article:nth-child(3) > section > .objectif {
+        flex-direction: column;
+        width: 90vw;
+    }
+    main > article:nth-child(3) > section > .objectif > .exemple{
+        width: 90vw;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .traitHori{
+        height: 1px;
+        width: 100%;
+    }
+    main > article:nth-child(3) > section > .objectif > .exemple > h2{
+        font-size: 12px;
+    }
+    main > article:nth-child(3) > section > .objectif > .exemple > .texte>p{
+        font-size: xx-small;
+        width: 90%;
+        padding: 2%;
+    }
+    main > article:nth-child(3) > section > .objectif > .exemple > .texte{
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+    main > article:nth-child(3) > section > .objectif > .exemple >p{
+        font-size: xx-small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    .traitHori:nth-child(3){
+        display: block;
+    }
+    footer{
+        height: 30vh;
+    }
+    footer > section {
+        width: 100vw;
+        height: 20vh;
+    }
+    footer > section > .contact {
+        width: 80vw;
+    }
+    footer > section > .contact > .logo > img{    height:60%;}
+
+
+
+
+
+
+}
