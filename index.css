@@ -281,10 +281,10 @@ and (max-device-width: 700px){
     }
     main > article:nth-child(1) > section{
         width: 90vw;
-        height: 70vh;
+        height: 90vh;
     }
     main > article:nth-child(1){
-        height: 80vh;
+        height: 100vh;
     }
     main > article:nth-child(2){
         height: 80vh;
